@@ -46,7 +46,7 @@ class PriceMonitor:
     def check_price(self, product):
         """Check current price for a product"""
         try:
-            response = requests.get(product['url'], headers=self.get_headers(), timeout=10)
+            response = requests.get(product['url'], headers=self.get_headers(), timeout=15)
             response.raise_for_status()
             
             current_price = self.extract_price(response.text, product['price_selector'])
