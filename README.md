@@ -98,3 +98,11 @@ Waiting 3600 seconds before next check...
 ## License
 
 MIT License - Feel free to use and modify
+
+## Troubleshooting
+
+**Issue: SSL Certificate errors**
+- Solution: Add `verify=False` to requests (not recommended for production)
+
+**Issue: Rate limiting**
+- Solution: Increase interval between checks
