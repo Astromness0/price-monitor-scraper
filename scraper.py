@@ -128,3 +128,5 @@ class PriceMonitor:
 if __name__ == '__main__':
     monitor = PriceMonitor()
     monitor.monitor(interval=3600)  # Check every hour
+
+# Additional utility functions can be added here
