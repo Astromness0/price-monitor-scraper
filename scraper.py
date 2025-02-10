@@ -104,7 +104,7 @@ class PriceMonitor:
         except Exception as e:
             print(f"Failed to send email: {str(e)}")
     
-    def monitor(self, interval=3600):
+    def monitor(self, interval=1800):
         """Monitor prices at specified interval (in seconds)"""
         print(f"Starting price monitor for {len(self.products)} products...")
         
@@ -127,6 +127,6 @@ class PriceMonitor:
 
 if __name__ == '__main__':
     monitor = PriceMonitor()
-    monitor.monitor(interval=3600)  # Check every hour
+    monitor.monitor(interval=1800)  # Check every hour
 
 # Additional utility functions can be added here
